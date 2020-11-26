@@ -29,8 +29,8 @@ function paintCreeting(text) {
 
 function loadName() {
     const currentUser = localStorage.getItem(USER_LS);
-    console.log(currentUser);
-    if(currentUser === null) {
+    console.log(`currentUser = ${currentUser}`);
+    if(currentUser === null || currentUser.length <= 0) {
         askForName();
     } else {
         paintCreeting(currentUser);
