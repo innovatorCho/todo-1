@@ -13,8 +13,9 @@ function deleteToDo(event) {
     toDoList.removeChild(li);
     
     const cleanToDos = todos.filter(function(todo) {
-        //console.log(`todo.id = ${todo.id} , li.id = ${li.id}`);
-        return todo.id != parseInt(li.id);
+       // let ret =  todo.id != parseInt(li.id);
+       //console.log(`todo.id = ${todo.id} , li.id = ${li.id} >> ${ret}`);
+        return todo.id !== parseInt(li.id);
     });
     todos = cleanToDos;
     saveTodos();
@@ -31,7 +32,7 @@ function printDodo(text) {
     const newId = todos.length + 1;
 
     delBtn.innerHTML = "❌";
-    //delBtn.addEventListener("click", deleteToDo);
+    delBtn.addEventListener("click", deleteToDo);
 
     span.innerText = text;
     li.appendChild(span);
