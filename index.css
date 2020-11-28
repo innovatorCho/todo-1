@@ -7,7 +7,7 @@ body {
 }
 
 body {
-    color: #34495e;
+    color: #dce0e4;
 }
 
 .clicked {
@@ -21,6 +21,10 @@ body {
 
 .showing {
     display: block;
+}
+
+h1 {
+    color: aliceblue;
 }
 
 @keyframes fadeIn {

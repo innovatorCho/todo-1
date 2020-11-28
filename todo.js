@@ -63,7 +63,7 @@ function loadTodos() {
         const parsedToDos = JSON.parse(loadedTodos);
         parsedToDos.forEach(function(todo) {
             printDodo(todo.text);
-            console.log(todo.text);
+            //console.log(todo.text);
         });
     } 
 }
